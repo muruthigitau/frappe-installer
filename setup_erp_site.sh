@@ -13,7 +13,7 @@ echo "-------------------------------"
 
 bench new-site "$site_name"
 
-for app in payments erpnext lending hrms crm insights print_designer
+for app in payments erpnext lending hrms crm print_designer
 do
     bench --site "$site_name" install-app "$app"
 done
