@@ -16,7 +16,7 @@ echo "-------------------------------"
 bench new-site "$site_name"
 
 # 2. Install apps
-for app in payments erpnext lending hrms crm insights print_designer
+for app in payments erpnext lending hrms crm print_designer
 do
     bench --site "$site_name" install-app "$app"
 done
