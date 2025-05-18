@@ -21,8 +21,6 @@ do
     bench --site "$site_name" install-app "$app"
 done
 
-# 3. Use the site
-bench use "$site_name"
 
 # 4. Add to hosts
 bench --site "$site_name" add-to-hosts
@@ -31,8 +29,6 @@ bench --site "$site_name" add-to-hosts
 bench --site "$site_name" enable-scheduler
 bench --site "$site_name" set-maintenance-mode off
 
-# 6. Enable DNS multitenant
-bench config dns_multitenant on
 
 # 7. Add domain and setup SSL
 bench setup add-domain "$base_domain" --site "$site_name"
