@@ -16,4 +16,7 @@ bench get-app crm
 bench get-app insights
 bench get-app print_designer
 
+sudo chmod 701 .
+sudo chmod -R o+rx .
+
 echo "✅ Bench setup complete in ./$bench_name"
