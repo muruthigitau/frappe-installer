@@ -30,7 +30,7 @@ bench new-site "$site_name"
 
 # ======= Install Apps =======
 echo "📦 Installing apps on $site_name..."
-for app in payments erpnext lending hrms crm print_designer
+for app in payments erpnext lending hrms print_designer
 do
     bench --site "$site_name" install-app "$app"
 done
