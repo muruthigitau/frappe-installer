@@ -11,6 +11,7 @@ echo "📦 Installing core dependencies..."
 sudo apt-get install git -y
 sudo apt install git python-is-python3 python3-dev python3-pip python3-venv redis-server -y
 sudo apt-get install xvfb libfontconfig wkhtmltopdf libmysqlclient-dev -y
+sudo apt install ansible -y
 sudo apt install mariadb-server mariadb-client -y
 
 echo "🐍 Installing Frappe Bench CLI..."
